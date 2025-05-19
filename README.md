@@ -12,17 +12,19 @@ Un véritable challenge technique, physique et mental pour repousser ses limites
 
 ---
 
+
+## 📂 Contenu du dépôt
+
+- 📁 **ex00, ex01, ...** : dossiers des exercices de la piscine  
+
+---
+
+
 ## 🎯 Objectifs personnels
 
 - ⚡ **Approfondir mes bases en C** pour maîtriser pleinement ce langage  
 - 🧠 **Renforcer ma logique algorithmique** et ma résolution de problèmes  
 - 🤝 **Développer mes compétences** en travail collaboratif et gestion de projet  
 - 🔥 **Améliorer ma rigueur, persévérance et gestion du stress**
-
----
-
-## 📂 Contenu du dépôt
-
-- 📁 **ex00, ex01, ...** : dossiers des exercices de la piscine  
 
 ---
