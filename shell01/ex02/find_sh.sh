@@ -1,7 +1,3 @@
 #!/bin/bash
 
-for file in *.sh; do
-
-  mv "$file" "${file%.sh}"
-
-done
+find . -type f -name "*.sh" -exec basename {} .sh \;
