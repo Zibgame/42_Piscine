@@ -1,2 +1,2 @@
-ls -1p --sort=time --time=ctime | grep -v '^/.' | grep -v '^midLS$' | paste -sd , - 
+ls -mptU
 
