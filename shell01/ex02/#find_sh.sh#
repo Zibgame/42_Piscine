@@ -1,0 +1,6 @@
+i#!/bin/bash
+
+I
+ mv "$file" "${file%.sh}"
+
+done
