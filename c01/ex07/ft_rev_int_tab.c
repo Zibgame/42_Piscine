@@ -6,26 +6,29 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 09:16:28 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/10 10:27:31 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/07/10 14:54:39 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
 
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int revtab[];
+	int	count;
+	int	temp;
 
-	revtab[]
-
+	count = 0;
+	while (count < size / 2) 
+	{
+		temp = tab[count];
+		tab[count] = tab[size - (count + 1)];
+		tab[size - (count + 1)] = temp;
+		count++;
+	}
 }
 
 int main() {
-    int arrx[] = {1,2,3,4};
-
-    ft_rev_int_tab(arrx, 4);
-    for (int r = 0; r < 4; r++) {
-        printf("index[%d] = %d\n", r, arrx[r]);
-    }
-    return(0);
+	int arr[] = {1, 2, 3, 4};
+	ft_rev_int_tab(arr, 4);
+	printf("tab0 = %d",arr[0]);
+	return (0);
 }
-
