@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                                     :+:      :+: :+:
- */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Zibgame cadinot.zibrian@gmail.com           +#+  +:+       +#+       */
+/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 by Zibgame                  #+#    #+#               */
-/*   Updated: 2025/07/09 by Zibgame                 ###   ########.fr         */
+/*   Created: 2025/07/10 09:16:28 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/10 10:47:13 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ultimate_div_mod(int *a, int *b) {
-  int temp_a = *a;
-  *a = *a / *b;
-  *b = temp_a % *b;
+void	ft_ultimate_div_mod(int *a, int *b)
+{
+	int	temp_a;
+
+	temp_a = *a;
+	*a = *a / *b;
+	*b = temp_a % *b;
 }
 
 /*

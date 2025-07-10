@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                     :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Zibgame cadinot.zibrian@gmail.com           +#+  +:+       +#+       */
+/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 by Zibgame                  #+#    #+#               */
-/*   Updated: 2025/07/09 by Zibgame                 ###   ########.fr         */
+/*   Created: 2025/07/10 09:16:28 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/10 11:02:35 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str) {
-  int len = 0;
-  while (str[len] != '\0') {
-    len++;
-  }
-  return len;
+int	ft_strlen(char *str)
+{
+	int	len;
+
+	len = 0;
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
 }
 
+/*
 #include <stdio.h>
 int main(void) {
   char *test1 = "Hello";
@@ -30,3 +35,4 @@ int main(void) {
 
   return 0;
 }
+*/

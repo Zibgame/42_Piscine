@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                     :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Zibgame cadinot.zibrian@gmail.com           +#+  +:u+       +#+ */
+/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 by Zibgame                  #+#    #+#               */
-/*   Updated: 2025/07/09 by Zibgame                 ###   ########.fr         */
+/*   Created: 2025/07/10 09:16:28 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/10 10:44:17 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_div_mod(int a, int b, int *div, int *mod) {
-  if (a == 0 || b == 0) {
-    return;
-  }
-  *div = a / b;
-  *mod = a % b;
+void	ft_div_mod(int a, int b, int *div, int *mod)
+{
+	if (a == 0 || b == 0)
+		return ;
+	*div = a / b;
+	*mod = a % b;
 }
 
 /*

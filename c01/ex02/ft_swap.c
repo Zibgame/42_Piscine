@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                     :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Zibgame cadinot.zibrian@gmail.com           +#+  +:+       +#+       */
+/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 by Zibgame                  #+#    #+#               */
-/*   Updated: 2025/07/09 by Zibgame                 ###   ########.fr         */
+/*   Created: 2025/07/10 09:16:28 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/10 10:39:12 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_swap(int *a, int *b) {
-  int temp;
+void	ft_swap(int *a, int *b)
+{
+	int	temp;
 
-  temp = *b;
-  *b = *a;
-  *a = temp;
+	temp = *b;
+	*b = *a;
+	*a = temp;
 }

@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include <stdio.h>
 
-void	ft_rev_int_tab(int *tab, int size)
+void	ft_sort_int_tab(int *tab, int size)
 {
 	int	i;
 	int	last;
@@ -38,7 +38,7 @@ void	ft_rev_int_tab(int *tab, int size)
 int main() {
     int arrx[] = { 6, 3, 6, 8, 4, 2, 5, 7 };
 
-    ft_rev_int_tab(arrx, 8);
+    ft_sort_int_tab(arrx, 8);
     for (int r = 0; r < 8; r++) {
         printf("index[%d] = %d\n", r, arrx[r]);
     }

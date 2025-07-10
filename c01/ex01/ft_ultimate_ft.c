@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                     :+:      :+:    :+: */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Zibgame cadinot.zibrian@gmail.com           +#+  +:+       +#+       */
+/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 by Zibgame                  #+#    #+#               */
-/*   Updated: 2025/07/09 by Zibgame                 ###   ########.fr         */
+/*   Created: 2025/07/10 09:16:28 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/10 10:37:47 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ultimate_ft(int *********nbr) { *********nbr = 42; }
+void	ft_ultimate_ft(int *********nbr)
+{
+	*********nbr = 42;
+}
 
-int main() {
+/*
+int	main(void)
+{
   int nb = 0;
   int *p1 = &nb;
   int **p2 = &p1;
@@ -24,5 +29,6 @@ int main() {
   int ********p8 = &p7;
   int *********p9 = &p8;
   ft_ultimate_ft(p9);
-  return 0;
+  return (0);
 }
+*/
