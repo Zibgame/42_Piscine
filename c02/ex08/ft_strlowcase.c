@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                     :+:      :+:    :+: */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Zibgame cadinot.zibrian@gmail.com           +#+  +:+       +#+       */
+/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 by Zibgame                  #+#    #+#               */
-/*   Updated: 2025/07/10 by Zibgame                 ###   ########.fr         */
+/*   Created: 2025/07/11 11:56:04 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/11 11:57:05 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strlowcase(char *str) {
-  int i = 0;
-  while (str[i] != '\0') {
-    if (str[i] >= 'A' && str[i] <= 'Z') {
-      str[i] = str[i] + 32;
-    }
-    i++;
-  }
-  return str;
+char	*ft_strlowcase(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+		{
+			str[i] = str[i] + 32;
+		}
+		i++;
+	}
+	return (str);
 }
