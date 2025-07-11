@@ -11,24 +11,24 @@
 /* ************************************************************************** */
 #include <stdio.h>
 
-void	ft_rev_int_tab(int *tab, int size)
-{
-	int	count;
-	int	temp;
+void ft_rev_int_tab(int *tab, int size) {
+  int count;
+  int temp;
 
-	count = 0;
-	while (count < size / 2) 
-	{
-		temp = tab[count];
-		tab[count] = tab[size - (count + 1)];
-		tab[size - (count + 1)] = temp;
-		count++;
-	}
+  count = 0;
+  while (count < size / 2) {
+    temp = tab[count];
+    tab[count] = tab[size - (count + 1)];
+    tab[size - (count + 1)] = temp;
+    count++;
+  }
 }
 
+/*
 int main() {
-	int arr[] = {1, 2, 3, 4};
-	ft_rev_int_tab(arr, 4);
-	printf("tab0 = %d",arr[0]);
-	return (0);
+        int arr[] = {1, 2, 3, 4};
+        ft_rev_int_tab(arr, 4);
+        printf("tab0 = %d",arr[0]);
+        return (0);
 }
+*/
