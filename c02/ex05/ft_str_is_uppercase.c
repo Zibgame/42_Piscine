@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_uppercase.c                                     :+:      :+: :+:
- */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Zibgame cadinot.zibrian@gmail.com           +#+  +:+       +#+       */
+/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 by Zibgame                  #+#    #+#               */
-/*   Updated: 2025/07/10 by Zibgame                 ###   ########.fr         */
+/*   Created: 2025/07/11 11:38:37 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/11 11:38:59 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_str_is_uppercase(char *str) {
-  int i = 0;
+int	ft_str_is_uppercase(char *str)
+{
+	int	i;
 
-  while (str[i] != '\0') {
-    if (!(str[i] >= 'A' && str[i] <= 'Z')) {
-      return 0;
-    }
-    i++;
-  }
-  return 1;
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (!(str[i] >= 'A' && str[i] <= 'Z'))
+		{
+			return (0);
+		}
+		i++;
+	}
+	return (1);
 }
 
 /*

@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_printable.c                                     :+:      :+: :+:
- */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Zibgame cadinot.zibrian@gmail.com           +#+  +:+       +#+       */
+i/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 by Zibgame                  #+#    #+#               */
-/*   Updated: 2025/07/10 by Zibgame                 ###   ########.fr         */
+/*   Created: 2025/07/11 11:41:30 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/11 11:41:49 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strupcase(char *str) {
-  int i;
+int	ft_str_is_printable(char *str)
+{
+	int	i;
 
-  i = 0;
-  while (str[i] != '\0') {
-    if (!(str[i] >= 32 && str[i] <= 126)) {
-      return 0;
-    } else
-      i++;
-  }
-  return 1;
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (!(str[i] >= 32 && str[i] <= 126))
+		{
+			return (0);
+		}
+		i++;
+	}
+	return (1);
 }
