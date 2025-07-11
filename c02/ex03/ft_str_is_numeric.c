@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                     :+:      :+:    :+:
- */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Zibgame cadinot.zibrian@gmail.com           +#+  +:+       +#+       */
+/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 by Zibgame                  #+#    #+#               */
-/*   Updated: 2025/07/10 by Zibgame                 ###   ########.fr         */
+/*   Created: 2025/07/11 11:27:49 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/11 11:29:29 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_str_is_numeric(char *str) {
-  int i;
+int	ft_str_is_numeric(char *str)
+{
+	int	i;
 
-  i = 0;
-  while (str[i] != '\0') {
-    if (!(str[i] >= '0' && str[i] <= '9')) {
-      return 0;
-    }
-    i++;
-  }
-  return 1;
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (!(str[i] >= '0' && str[i] <= '9'))
+		{
+			return (0);
+		}
+		i++;
+	}
+	return (1);
 }
 /*
 #include <stdio.h>

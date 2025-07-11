@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                     :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Zibgame cadinot.zibrian@gmail.com           +#+  +:+       +#+       */
+/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 by Zibgame                  #+#    #+#               */
-/*   Updated: 2025/07/10 by Zibgame                 ###   ########.fr         */
+/*   Created: 2025/07/11 11:18:11 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/11 11:20:35 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strncpy(char *dest, char *src, unsigned int n) {
-  int i;
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
+{
+	int	i;
 
-  i = 0;
-  while (i < n) {
-    if (src[i] != '\0')
-      dest[i] = src[i];
-    else
-      dest[i] = '\0';
-    i++;
-  }
-  return dest;
+	i = 0;
+	while (i < n)
+	{
+		if (src[i] != '\0')
+			dest[i] = src[i];
+		else
+			dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }
 /*
 #include <stdio.h>
@@ -44,4 +46,3 @@ int main(void) {
   return (0);
 }
 */
-printf
