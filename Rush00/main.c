@@ -16,6 +16,8 @@ void	rush(int x, int y);
 
 int	main(void)
 {
+	rush(-3, -3);
+	write(1, "\n", 1);
 	rush(5, 3);
 	write(1, "\n", 1);
 	rush(5, 1);
