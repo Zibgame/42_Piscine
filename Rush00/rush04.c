@@ -65,8 +65,10 @@ void	rush(int x, int y)
 	int		column;
 	int		line;
 	int		tab_size[2];
-	char	tab[6];
+	char	tab[6];	
 
+	if (x <= 0 || y <= 0)
+		return ;
 	tab[0] = 'A';
 	tab[1] = 'C';
 	tab[2] = 'C';
@@ -76,14 +78,11 @@ void	rush(int x, int y)
 	tab_size[0] = x;
 	tab_size[1] = y;
 	line = 0;
-	while (line != y)
+	while (line < y)
 	{
 		column = 0;
-		while (column != x)
-		{
-			square(column, line, tab_size, tab);
-			column++;
-		}
+		while (column < x)
+			square(column++, line, tab_size, tab);
 		ft_putchar('\n');
 		line++;
 	}
