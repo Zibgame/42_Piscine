@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush02.c                                           :+:      :+:    :+:   */
+/*   rush03.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: leauvray <leauvray@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -58,7 +58,7 @@ void	square(int column, int line, int *tab_size, char *tab)
 ** tab[2] = ''; //bas gauche
 ** tab[3] = ''; //bas droit 
 ** tab[4] = ''; //espaces cotes 
-** tab[5] = ''; //bare du haut et du bas
+** tab[5] = ''; //espaces haut bas
 */
 void	rush(int x, int y)
 {
@@ -68,8 +68,8 @@ void	rush(int x, int y)
 	char	tab[6];
 
 	tab[0] = 'A';
-	tab[1] = 'A';
-	tab[2] = 'C';
+	tab[1] = 'C';
+	tab[2] = 'A';
 	tab[3] = 'C';
 	tab[4] = 'B';
 	tab[5] = 'B';

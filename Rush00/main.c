@@ -1,8 +1,30 @@
-void rush(int x, int y);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: leauvray <leauvray@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/12 12:23:49 by leauvray          #+#    #+#             */
+/*   Updated: 2025/07/12 12:27:44 by zcadinot         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int main(void)
+#include <unistd.h>
+
+void	rush(int x, int y);
+
+int	main(void)
 {
-    rush(5, 3);
-    return (0);
+	rush(5, 3);
+	write(1, "\n", 1);
+	rush(5, 1);
+	write(1, "\n", 1);
+	rush(1, 1);
+	write(1, "\n", 1);
+	rush(1, 5);
+	write(1, "\n", 1);
+	rush(4, 4);
+	write(1, "\n", 1);
+	return (0);
 }
-
