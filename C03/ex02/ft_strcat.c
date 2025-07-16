@@ -1,18 +1,30 @@
-char  *ft_strcat(char *dest, char *src)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/16 22:30:53 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/16 22:30:55 by zcadinot         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+char	*ft_strcat(char *dest, char *src)
 {
 	int	i;
 	int	j;
 
 	i = 0;
 	j = 0;
-	while(dest[i] != '\0')		
+	while (dest[i] != '\0')
 		i++;
-	while(src[j] != '\0')
+	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
 		i++;
 		j++;
 	}
 	dest[i] = '\0';
-	return dest;
+	return (dest);
 }
