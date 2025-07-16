@@ -11,17 +11,19 @@
 /* ************************************************************************** */
 #include <stdio.h>
 
-void ft_rev_int_tab(int *tab, int size) {
-  int count;
-  int temp;
+void	ft_rev_int_tab(int *tab, int size)
+{
+	int	count;
+	int	temp;
 
-  count = 0;
-  while (count < size / 2) {
-    temp = tab[count];
-    tab[count] = tab[size - (count + 1)];
-    tab[size - (count + 1)] = temp;
-    count++;
-  }
+	count = 0;
+	while (count < size / 2)
+	{
+		temp = tab[count];
+		tab[count] = tab[size - (count + 1)];
+		tab[size - (count + 1)] = temp;
+		count++;
+	}
 }
 
 /*
