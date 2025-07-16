@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 23:02:13 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/15 23:11:44 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/07/16 11:44:40 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int ft_iterative_factorial(int nb)
 
     i = 1;
     res = 1;
-    if (nb < 0)
+    if  (nb < 0)
         return 0;
     while (i <= nb)
     {

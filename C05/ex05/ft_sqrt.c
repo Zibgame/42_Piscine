@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/16 11:26:48 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/16 11:31:23 by zcadinot         ###   ########.fr       */
+/*   Created: 2025/07/16 12:13:16 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/16 14:54:10 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+int	ft_sqrt(int nb)
 {
-	int	i;
-	int	j;
+	int	res;
 
-	if (to_find[0] == '\0')
-		return str;
-	i = 0;
-	while (str[i] != '\0')
- 	{
-		j = 0;
-		while (str[i + j] != '\0' && to_find[j] != '\0' && str[i + j] == to_find[j])
-			j++;
-			if (to_find[j] == '\0')
-				return &str[i];
-		i++;
-	}
-	return NULL;
+	res = 0;
+	while ((res * res) < nb)
+		res++;
+	if (res * res == nb)
+		return (res);
+	return (0);
 }
+/*
+#include <stdio.h>
+
+int main()
+{
+	int nb = 25;
+	int res = ft_sqrt(nb);
+	printf("racine de %d ", res);
+	return (0);
+}
+*/
