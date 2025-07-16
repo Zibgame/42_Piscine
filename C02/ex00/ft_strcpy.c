@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 11:13:43 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/15 01:00:02 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/07/11 11:15:58 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
+/*
 #include <stdio.h>
 
 char *ft_strcpy(char *dest, char *src);
@@ -37,3 +38,4 @@ int main(void) {
   printf("dest = %s\n", dest);
   return (0);
 }
+*/

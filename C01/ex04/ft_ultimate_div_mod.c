@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 09:16:28 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/10 10:47:13 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/07/15 14:56:04 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void	ft_ultimate_div_mod(int *a, int *b)
 	*a = *a / *b;
 	*b = temp_a % *b;
 }
-
 /*
 #include <stdio.h>
 
