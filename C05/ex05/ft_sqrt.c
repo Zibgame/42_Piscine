@@ -14,21 +14,28 @@ int	ft_sqrt(int nb)
 {
 	int	res;
 
-	res = 0;
-	while ((res * res) < nb)
+	if (nb <= 0)
+		return (0);
+	res = 1;
+	while (res * res < nb)
+	{
 		res++;
+	}
 	if (res * res == nb)
 		return (res);
 	return (0);
 }
+
 /*
 #include <stdio.h>
 
-int main()
+int	main(void)
 {
-	int nb = 25;
-	int res = ft_sqrt(nb);
-	printf("racine de %d ", res);
+	int	nb = 25;
+	int	res;
+
+	res = ft_sqrt(nb);
+	printf("racine carrée de %d = %d\n", nb, res);
 	return (0);
 }
 */

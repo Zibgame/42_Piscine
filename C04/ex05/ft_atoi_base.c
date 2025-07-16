@@ -3,19 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 16:17:51 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/15 16:22:46 by zcadinot         ###   ########.fr       */
+/*   Created: 2025/07/16 22:38:31 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/16 22:38:33 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
 
 int	is_valide(char *base)
 {
@@ -23,77 +16,75 @@ int	is_valide(char *base)
 	int	j;
 
 	i = 0;
-	j = 1;
-	while (base[i] != '\0')
+	while (base[i])
 	{
 		if (base[i] == '+' || base[i] == '-')
 			return (0);
-		j = 1;
-		while (base[i + j] != '\0')
+		j = i + 1;
+		while (base[j])
 		{
-			if (base[i] == base[i + j]) //0123456789
+			if (base[i] == base[j])
 				return (0);
 			j++;
 		}
 		i++;
 	}
-	if (i <= 1)
-	{
-		return (0);
-	}
-	return (1);
+	return (i > 1);
 }
 
-void	ft_putnbr_base(int nbr, char *base)
+int	ft_char_to_value(char c, char *base)
 {
-	int		base_len;
-	long	nb;
+	int	i;
 
-	nb = nbr;
-	base_len = 0;
-	if (is_valide(base) == 0)
-		return ;
-	while (base[base_len] != '\0')
+	i = 0;
+	while (base[i])
 	{
-		base_len++;
+		if (base[i] == c)
+			return (i);
+		i++;
 	}
-	if (nb < 0)
-	{
-		ft_putchar('-');
-		nb = -nb;
-	}
-	if (nb >= base_len)
-	{
-		ft_putnbr_base(nb / base_len, base);
-		ft_putnbr_base(nb % base_len, base);
-	}
-	else
-		ft_putchar(base[nb]);
+	return (-1);
 }
 
-int ft_atoi_base(char *str, char *base)
+int	ft_skip_spaces_and_sign(char *str, int *i)
+{
+	int	signe;
+
+	signe = 1;
+	while ((str[*i] >= 9 && str[*i] <= 13) || str[*i] == ' ')
+		(*i)++;
+	while (str[*i] == '+' || str[*i] == '-')
+	{
+		if (str[*i] == '-')
+			signe = -signe;
+		(*i)++;
+	}
+	return (signe);
+}
+
+int	ft_atoi_base(char *str, char *base)
 {
 	int	i;
 	int	signe;
 	int	res;
+	int	val;
+	int	base_len;
 
+	if (!is_valide(base))
+		return (0);
 	i = 0;
-	signe = 1;
 	res = 0;
-	while ((str[i] == ' ') || (str[i] >= 9 && str[i] <= 13))
+	signe = ft_skip_spaces_and_sign(str, &i);
+	base_len = 0;
+	while (base[base_len])
+		base_len++;
+	while (str[i])
 	{
+		val = ft_char_to_value(str[i], base);
+		if (val == -1)
+			break ;
+		res = res * base_len + val;
 		i++;
 	}
-	while (str[i] == '+' || str[i] == '-')
-	{
-		if (str[i] == '-')
-			signe *= -1;
-		i++;
-	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		res = res * 10 + (str[i] - 48);
-		i++;
-	}
-	return (signe * res);
+	return (res * signe);
 }

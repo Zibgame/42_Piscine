@@ -9,6 +9,7 @@
 /*   Updated: 2025/07/15 14:19:13 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -22,24 +23,21 @@ int	is_valide(char *base)
 	int	j;
 
 	i = 0;
-	j = 1;
 	while (base[i] != '\0')
 	{
 		if (base[i] == '+' || base[i] == '-')
 			return (0);
-		j = 1;
-		while (base[i + j] != '\0')
+		j = i + 1;
+		while (base[j] != '\0')
 		{
-			if (base[i] == base[i + j]) //0123456789
+			if (base[i] == base[j])
 				return (0);
 			j++;
 		}
 		i++;
 	}
 	if (i <= 1)
-	{
 		return (0);
-	}
 	return (1);
 }
 
@@ -50,12 +48,10 @@ void	ft_putnbr_base(int nbr, char *base)
 
 	nb = nbr;
 	base_len = 0;
-	if (is_valide(base) == 0)
+	if (!is_valide(base))
 		return ;
 	while (base[base_len] != '\0')
-	{
 		base_len++;
-	}
 	if (nb < 0)
 	{
 		ft_putchar('-');
@@ -69,10 +65,3 @@ void	ft_putnbr_base(int nbr, char *base)
 	else
 		ft_putchar(base[nb]);
 }
-/*
-int	main(void)
-{
-	ft_putnbr_base(42, "0123456789");
-	return (0);
-}
-*/
