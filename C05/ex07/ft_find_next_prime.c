@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_prime.c                                      :+:      :+:    :+:   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/16 14:55:27 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/16 23:08:22 by zcadinot         ###   ########.fr       */
+/*   Created: 2025/07/16 23:10:22 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/16 23:16:13 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@ int ft_is_prime(int nb)
 
     i = 2;
     if (nb <= 1)
-    {
         return (0);
-    }
     while (i * i <= nb)
     {
         if (nb % i == 0)
@@ -28,13 +26,9 @@ int ft_is_prime(int nb)
     return (1);
 }
 
-/*
-#include <stdio.h>
-
-int main()
+int ft_find_next_prime(int nb)
 {
-    int nb = 3;
-    printf("%d",ft_is_prime(nb));
-    return (0);
+    while (!(ft_is_prime(nb)))
+        nb++;
+    return nb;
 }
-*/
