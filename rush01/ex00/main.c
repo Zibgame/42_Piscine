@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 19:34:21 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/19 19:34:24 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/07/19 19:51:07 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,3 @@ int	main(int argc, char **argv)
 		print_grid(grid);
 	return (0);
 }
-
