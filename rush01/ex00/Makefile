@@ -3,28 +3,26 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: student <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/07/18                              #+#    #+#              #
-#    Updated: 2025/07/18                              ###   ########.fr        #
+#    Created: 2025/07/19 19:37:08 by zcadinot          #+#    #+#              #
+#    Updated: 2025/07/19 19:37:15 by zcadinot         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME    = rush01
+NAME = rush01
 
-CC      = cc
-CFLAGS  = -Wall -Wextra -Werror
-
-SRCS    = main.c parser.c solver.c utils.c
-OBJS    = $(SRCS:.c=.o)
+SRC = main.c parser.c rush01.c solver.c utils.c
+OBJ = $(SRC:.c=.o)
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+$(NAME): $(OBJ)
+	cc $(CFLAGS) -o $(NAME) $(OBJ)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)
