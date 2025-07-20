@@ -9,7 +9,6 @@
 /*   Updated: 2025/07/17 10:56:26 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <stdlib.h>
 
 char	*ft_strdup(char *src)
@@ -20,11 +19,9 @@ char	*ft_strdup(char *src)
 	i = 0;
 	while (src[i])
 		i++;
-
-	dup = malloc((i + 1) * sizeof(char)); // +1 pour le '\0'
+	dup = malloc((i + 1) * sizeof(char));
 	if (!dup)
 		return (NULL);
-
 	i = 0;
 	while (src[i])
 	{
@@ -32,6 +29,5 @@ char	*ft_strdup(char *src)
 		i++;
 	}
 	dup[i] = '\0';
-
 	return (dup);
 }
