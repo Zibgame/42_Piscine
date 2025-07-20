@@ -23,6 +23,7 @@ int	ft_fibonacci(int index)
 
 /*
 #include <stdio.h>
+
 int	main(void)
 {
 	printf("%d\n", ft_fibonacci(5)); // Affiche 5
