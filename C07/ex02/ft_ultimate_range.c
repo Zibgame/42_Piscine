@@ -1,33 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/17 11:09:53 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/17 11:45:12 by zcadinot         ###   ########.fr       */
+/*   Created: 2025/07/20 19:26:48 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/20 19:50:00 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 
-int	*ft_range(int min, int max)
+int	ft_ultimate_range(int **range, int min, int max)
 {
-	int	*arr;
-	int	size;
 	int	i;
+	int	size;
 
 	if (min >= max)
-		return (NULL);
+	{
+		*range = NULL;
+		return (0);
+	}
 	size = max - min;
-	arr = malloc(size * sizeof(int));
-	if (!arr)
-		return (NULL);
+	*range = malloc(size * sizeof(int));
+	if (!*range)
+		return (-1);
 	i = 0;
 	while (i < size)
 	{
-		arr[i] = min + i;
+		(*range)[i] = min + i;
 		i++;
 	}
-	return (arr);
+	return (size);
 }
