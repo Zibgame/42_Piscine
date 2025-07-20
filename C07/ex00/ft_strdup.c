@@ -12,39 +12,26 @@
 
 #include <stdlib.h>
 
-char *copy_to(char src[], char dest[])
-{
-	int i;
-
-	i = 0;
-	while(src[i]) 
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	return dest;
-}
-
 char	*ft_strdup(char *src)
 {
-	int	i;
-	char	*arr;
-	char	*res;
+	int		i;
+	char	*dup;
+
+	i = 0;
+	while (src[i])
+		i++;
+
+	dup = malloc((i + 1) * sizeof(char)); // +1 pour le '\0'
+	if (!dup)
+		return (NULL);
 
 	i = 0;
 	while (src[i])
 	{
+		dup[i] = src[i];
 		i++;
 	}
-	arr = malloc(i  * sizeof(char));
-	res = copy_to(src, arr);
-	return res;
+	dup[i] = '\0';
+
+	return (dup);
 }
-/*
-int main()
-{
-	char	*src = "salut";
-	ft_strdup(src);
-	return (0);
-}
-*/
