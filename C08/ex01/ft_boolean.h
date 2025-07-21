@@ -6,16 +6,18 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 14:02:12 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/21 14:13:31 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/07/21 16:58:42 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_BOOLEAN_H
 # define FT_BOOLEAN_H
-# define t_bool unsigned int
-# define true 1
-# define false 0
-
+typedef t_bool int
+# define TRUE 1
+# define FALSE 0
+# define EVEN_MSG "I have an even number of arguments.\n"
+# define OOD_MSG "I have an odd number of arguments.\n"
+# define EVEN(nb) (nb % 2)
 
 
 #endif
