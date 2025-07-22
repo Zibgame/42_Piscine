@@ -13,12 +13,12 @@
 #include "ft_stock_str.h"
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
-	write(1,&c,1);
+	write(1, &c, 1);
 }
 
-void ft_putnbr(int nb)
+void	ft_putnbr(int nb)
 {
 	if (nb < -2147483648)
 	{
@@ -39,7 +39,7 @@ void ft_putnbr(int nb)
 	}
 }
 
-void ft_print_str(char *str)
+void	ft_print_str(char *str)
 {
 	int i;
 
