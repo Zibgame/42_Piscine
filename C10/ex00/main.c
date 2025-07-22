@@ -14,7 +14,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-static int	handle_errors(int ac)
+int	handle_errors(int ac)
 {
 	if (ac < 2)
 	{
