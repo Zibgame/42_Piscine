@@ -1,1 +1,3 @@
-Salut si tu voit se message c'est que ton programme marche gg a toi
+Ceci est la ligne 1
+Ceci est la ligne 2
+Ceci est la ligne 3
