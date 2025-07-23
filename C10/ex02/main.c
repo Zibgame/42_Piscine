@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 00:03:00 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/23 15:30:52 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/07/23 15:48:28 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,7 @@ int tail(char *filename, int nb)
 	fd = open(filename,O_RDONLY);
 	if (fd < 0)
 		return (ft_putstr_type("Cannot read file.\n", 2), 1);
-	read(fd,buffer,BUF_SIZE);
-	while (i < total_byte	- nb)
+	while (i < (total_byte	- nb))
 	{
 		read(fd,buffer,BUF_SIZE);
 		i++;
@@ -71,33 +70,6 @@ int tail(char *filename, int nb)
 	return (1);
 }
 
-
-/* void	tail(int tt_byte,int nb, char *filename) */
-/* { */
-/* 	int i; */
-/* 	int fd; */
-/* 	char buffer[BUF_SIZE]; */
-/* 	ssize_t nbbyte_read; */
-
-/* <F5>	i = 0; */
-/* 	(void)nbbyte_read; */
-/* 	fd = open(filename, O_RDONLY); */
-/* 	nbbyte_read = read(fd,buffer,BUF_SIZE); */
-/* 	while(i < tt_byte - nb) */
-/* 	{ */
-/* 		nbbyte_read = read(fd,buffer,BUF_SIZE); */
-/* 		i++; */
-/* 	} */
-/* 	while(i < tt_byte) */
-/* 	{ */
-/* 		nbbyte_read = read(fd,buffer,BUF_SIZE); */
-/* 		write(1,buffer,BUF_SIZE); */
-/* 		i++; */
-/* 	} */
-/* 	close(fd); */
-/* 	return ; */
-/* } */
-
 int	main(int ac, char *av[])
 {
 	int	i;
@@ -107,7 +79,7 @@ int	main(int ac, char *av[])
 	i = 1;
 	while (i < ac - 1)
 	{
-		if(tail(av[i],ft_atoi(av[ac - 1]) + 1))
+		if(tail(av[i],ft_atoi(av[ac - 1])))
 			return (0);
 		i++;
 	}
