@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 00:03:00 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/23 15:48:28 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/07/23 16:21:31 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,9 @@ int tail(char *filename, int nb)
 	ssize_t nb_byte_read;
 	
 	i = 0;
-	(void)nb;
+	if (nb < 0)
+		nb *= -1;
+	if ()
 	total_byte = ft_count_bit_file(filename);
 	fd = open(filename,O_RDONLY);
 	if (fd < 0)
