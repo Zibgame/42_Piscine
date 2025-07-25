@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 11:32:36 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/16 11:36:57 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/07/25 22:56:32 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,4 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	dest[i] = '\0';
 	return (dest);
 }
+
