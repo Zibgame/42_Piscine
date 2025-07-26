@@ -1,7 +1,7 @@
 NAME = rush-02
-SRC = rush02.c
+SRC = rush-02.c utils.c other.c main.c
 OBJ = $(SRC:.c=.o)
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 
 all: $(NAME)
 
