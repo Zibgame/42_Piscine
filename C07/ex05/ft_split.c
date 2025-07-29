@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 22:38:46 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/28 23:42:26 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/07/29 16:43:38 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int ft_is_sep(char c,char *sep)
     i = 0;
     while (sep[i])
     {
-        if (c == sep[i])
+        if (c == sep[i] || c == '\0')
             return (1);
         i++;
     }
@@ -60,6 +60,7 @@ int ft_count_words(char *str, char *sep)
 
 char *ft_copy_words(char *str, long  start, long end)
 {
+    // "salut sa vas"
     long i;
     long len;
     char *res;
@@ -83,30 +84,39 @@ char **ft_split(char *str, char *charset)
 {
     // "im split or not ?"
     char **res;
+    long start;
+    int bool;
     long len;
     long i;
     long j;
 
     i = 0;
     j = 0;
+    start = 0;
+    bool = 1;
     len = 0;
     res = malloc((ft_count_words(str, charset) + 1) * sizeof(char *));
     if (!res)
         return NULL;
     while (str[i])
     {
+        if (bool)
+        {
+            bool = 0;
+            start = i;
+        }
         if (!(ft_is_sep(str[i], charset)))
             len++;
         else if ((ft_is_sep(str[i], charset)))
         {
-            res[j] = ft_copy_words(str, i, len - 1);
+            bool = 1;
+            res[j] = ft_copy_words(str, start,start + len);
             len = 0;
             j++;
         }
         i++;
     }
-    res[(ft_count_words(str , charset) + 1)] = NULL;
-    return (res);
+    res[(ft_count_words(str , charset) + 1)] = NULL; return (res);
 }
 
 #include <stdio.h>
@@ -120,9 +130,9 @@ int main(void)
     while (split[i])
     {
         printf("Mot %ld : '%s'\n", i, split[i]);
-        free(split[i]);
-        i++;
+        free(split[i]); i++;
     }
+    printf("%s",ft_copy_words(str,3,8));
     free(split);
     return (0);
 }
