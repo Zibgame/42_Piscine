@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_foreach.c                                       :+:      :+:    :+:   */
+/*   ft_map.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/29 15:53:49 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/30 00:19:50 by zcadinot         ###   ########.fr       */
+/*   Created: 2025/07/30 00:21:20 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/30 00:29:08 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_foreach(int *tab, int length, void(*f)(int))
+#include <stdlib.h>
+
+int *ft_map(int *tab, int length, int(*f)(int))
 {
-    long i;
+    int i;
+    int *res;
 
     i = 0;
+    res = malloc(length * sizeof(int));
+    if (!res)
+        return NULL;
     while (i < length)
     {
-        (*f)(tab[i]);
+        res[i] = (*f)(tab[i]);
         i++;
     }
+    return (res);
 }
+
