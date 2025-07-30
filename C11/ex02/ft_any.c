@@ -6,11 +6,20 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 11:53:49 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/30 11:56:01 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/07/30 16:01:54 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_any(char **tab, int(*f)(char*))
+int	ft_any(char **tab, int (*f)(char *))
 {
+	int	i;
 
+	i = 0;
+	while (tab[i])
+	{
+		if (f(tab[i]) != 0)
+			return (1);
+		i++;
+	}
+	return (0);
 }
