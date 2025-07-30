@@ -25,23 +25,22 @@ all: $(NAME)
 
 # makeing de la lib
 $(NAME): $(OBJ)
-    ar rc $(NAME) $(OBJ)
-    ranlib $(NAME)
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 # Compilation des .c en .o
 srcs/%.o: srcs/%.c
-    $(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 # Nettoyage des fichiers objets
 clean:
-    rm -f $(OBJ)
+	rm -f $(OBJ)
 
 # cleanig complet
 fclean: clean
-    rm -f $(NAME)
+	rm -f $(NAME)
 
 # rbuild complet
 re: fclean all
 
 .PHONY: all clean fclean re
-

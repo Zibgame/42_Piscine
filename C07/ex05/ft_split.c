@@ -14,7 +14,7 @@
 
 int	ft_is_sep(char c, char *sep)
 {
-	long	i;
+	int	i;
 
 	i = 0;
 	while (sep[i])
@@ -28,9 +28,9 @@ int	ft_is_sep(char c, char *sep)
 
 int	ft_count_words(char *str, char *sep)
 {
-	long	i;
-	long	words;
-	int		in_word;
+	int	i;
+	int	words;
+	int	in_word;
 
 	i = 0;
 	words = 0;
@@ -49,17 +49,15 @@ int	ft_count_words(char *str, char *sep)
 	return (words);
 }
 
-char	*ft_copy_words(char *str, long start, long end)
+char	*ft_copy_words(char *str, int start, int end)
 {
-	long	i;
-	long	len;
 	char	*res;
+	int		i;
 
-	len = end - start;
-	res = malloc((len + 1) * sizeof(char));
+	i = 0;
+	res = malloc((end - start + 1) * sizeof(char));
 	if (!res)
 		return (NULL);
-	i = 0;
 	while (start + i < end)
 	{
 		res[i] = str[start + i];
@@ -69,45 +67,44 @@ char	*ft_copy_words(char *str, long start, long end)
 	return (res);
 }
 
-long	ft_is_not_sep(char *str, char *sep, long start)
+void	ft_fill_split(char **res, char *str, char *sep)
 {
-	long	len;
-
-	len = 0;
-	while (str[start + len] && !ft_is_sep(str[start + len], sep))
-		len++;
-	return (len);
-}
-
-char	**ft_split(char *str, char *charset)
-{
-	char	**res;
-	long	start;
-	int		in_word;
-	long	len;
-	long	i;
-	long	j;
+	int	i;
+	int	j;
+	int	in_word;
+	int	start;
+	int	len;
 
 	i = 0;
 	j = 0;
 	in_word = 1;
-	res = malloc((ft_count_words(str, charset) + 1) * sizeof(char *));
-	if (!res)
-		return (NULL);
 	while (str[i])
 	{
-		if (in_word && !ft_is_sep(str[i], charset))
+		if (in_word && !ft_is_sep(str[i], sep))
 		{
 			in_word = 0;
 			start = i;
-			len = ft_is_not_sep(str, charset, start);
+			len = 0;
+			while (str[i + len] && !ft_is_sep(str[i + len], sep))
+				len++;
 			res[j++] = ft_copy_words(str, start, start + len);
 			i += len - 1;
 		}
-		else if (ft_is_sep(str[i], charset))
+		else if (ft_is_sep(str[i], sep))
 			in_word = 1;
 		i++;
 	}
 	res[j] = NULL;
+}
+
+char	**ft_split(char *str, char *sep)
+{
+	char	**res;
+
+	res = malloc((ft_count_words(str, sep) + 1) * sizeof(char *));
+	if (!res)
+		return (NULL);
+	ft_fill_split(res, str, sep);
 	return (res);
 }
+
