@@ -7,8 +7,8 @@
 - [✅] C04 |100|
 - [✅] C05 |80|
 - [✅] C06 |100|
-~ [x] C07 
-~ [x] C08 |0| # norme
-- [x] C09 || # ftsplit a faire pour full
-- [x] C10 || # plus que le derneir a faire et verfier les makefile
-
+- [✅] C07 |80|
+- [✅] C08 |70|
+- [✅] C09 |100|
+~ [x] C10 || #pas fait le makefile
+- [✅] C11 |65|

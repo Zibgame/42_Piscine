@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 09:21:26 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/09 10:02:50 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/07/31 11:22:49 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -16,10 +16,10 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-/*
+
 int	main(void)
 {
 	ft_putchar('c');
 	return (0);
 }
-*/
+
