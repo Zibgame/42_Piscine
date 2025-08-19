@@ -39,71 +39,70 @@ Un véritable challenge technique, physique et mental pour repousser ses limites
 
 ### 🐚 Shell01
 📸 Résultat :  
-![Shell01](other/img/Shell01.png)
+![Shell01](Other/img/Shell01.png)
 
 ---
 
 ### 📦 C00
 📸 Résultat :  
-![C00](/img/C00.png)
+![C00](Other/img/C00.png)
 
 ---
 
 ### 📦 C01
 📸 Résultat :  
-![C01](/img/C01.png)
+![C01](Other/img/C01.png)
 
 ---
 
 ### 📦 C02
 📸 Résultat :  
-![C02](/img/C02.png)
+![C02](Other/img/C02.png)
 
 ---
 
 ### 📦 C03
 📸 Résultat :  
-![C03](/img/C03.png)
+![C03](Other/img/C03.png)
 
 ---
 
 ### 📦 C04
 📸 Résultat :  
-![C04](/img/C04.png)
+![C04](Other/img/C04.png)
 
 ---
 
 ### 📦 C05
 📸 Résultat :  
-![C05](/img/C05.png)
+![C05](Other/img/C05.png)
 
 ---
 
 ### 📦 C06
 📸 Résultat :  
-![C06](/img/C06.png)
+![C06](Other/img/C06.png)
 
 ---
 
 ### 📦 C07
 📸 Résultat :  
-![C07](/img/C07.png)
+![C07](Other/img/C07.png)
 
 ---
 
 ### 📦 C08
 📸 Résultat :  
-![C08](/img/C08.png)
+![C08](Other/img/C08.png)
 
 ---
 
 ### 📦 C09
 📸 Résultat :  
-![C09](/img/C09.png)
+![C09](Other/img/C09.png)
 
 ---
 
 ### 📦 C11
 📸 Résultat :  
-![C11](/img/C11.png)
-
+![C11](Other/img/C11.png)
