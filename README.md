@@ -33,7 +33,7 @@ Un véritable challenge technique, physique et mental pour repousser ses limites
 
 ### 🐚 Shell00
 📸 Résultat :  
-![Shell00](/img/Shell00.png)
+![Shell00](Other/img/Shell00.png)
 
 ---
 
