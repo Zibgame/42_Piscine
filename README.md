@@ -28,7 +28,6 @@ Un véritable challenge technique, physique et mental pour repousser ses limites
 - 🔥 **Améliorer ma rigueur, persévérance et gestion du stress**
 
 ---
----
 
 ## 🧩 Avancement par cellule
 
@@ -40,7 +39,7 @@ Un véritable challenge technique, physique et mental pour repousser ses limites
 
 ### 🐚 Shell01
 📸 Résultat :  
-![Shell01](/img/Shell01.png)
+![Shell01](other/img/Shell01.png)
 
 ---
 
