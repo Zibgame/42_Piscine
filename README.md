@@ -51,6 +51,6 @@ Un véritable challenge technique, physique et mental pour repousser ses limites
 
 # J’ai réussi, grâce à tout cela, à être admis 🎉
 
-![admis](image_admis.png)
+![admis](Other/img/Resultat.png)
 
 
