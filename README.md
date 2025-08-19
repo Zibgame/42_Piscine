@@ -28,21 +28,20 @@ Un véritable challenge technique, physique et mental pour repousser ses limites
 - 🔥 **Améliorer ma rigueur, persévérance et gestion du stress**
 
 ---
-## 🧩 Avancement par cellule
-
 | Cellule  | Statut   | Résultat |
 |----------|----------|----------|
-| 🐚 Shell00 | ✅ Fini  | ![Shell00](Other/img/Shell00.png) |
-| 🐚 Shell01 | ✅ Fini  | ![Shell01](Other/img/Shell01.png) |
-| 📦 C00     | ✅ Fini  | ![C00](Other/img/C00.png) |
-| 📦 C01     | ✅ Fini  | ![C01](Other/img/C01.png) |
-| 📦 C02     | ✅ Fini  | ![C02](Other/img/C02.png) |
-| 📦 C03     | ✅ Fini  | ![C03](Other/img/C03.png) |
-| 📦 C04     | ✅ Fini  | ![C04](Other/img/C04.png) |
-| 📦 C05     | ✅ Fini  | ![C05](Other/img/C05.png) |
-| 📦 C06     | ✅ Fini  | ![C06](Other/img/C06.png) |
-| 📦 C07     | ✅ Fini  | ![C07](Other/img/C07.png) |
-| 📦 C08     | ✅ Fini  | ![C08](Other/img/C08.png) |
-| 📦 C09     | ✅ Fini  | ![C09](Other/img/C09.png) |
-| 📦 C10     | ❌ En pause  | 💤 Flemmardise (Hexdump manquant 😅) |
-| 📦 C11     | ✅ Fini  | ![C11](Other/img/C11.png) |
+| [🐚 Shell00](Shell00) | ✅ Fini  | ![Shell00](Other/img/Shell00.png) |
+| [🐚 Shell01](Shell01) | ✅ Fini  | ![Shell01](Other/img/Shell01.png) |
+| [📦 C00](C00)     | ✅ Fini  | ![C00](Other/img/C00.png) |
+| [📦 C01](C01)     | ✅ Fini  | ![C01](Other/img/C01.png) |
+| [📦 C02](C02)     | ✅ Fini  | ![C02](Other/img/C02.png) |
+| [📦 C03](C03)     | ✅ Fini  | ![C03](Other/img/C03.png) |
+| [📦 C04](C04)     | ✅ Fini  | ![C04](Other/img/C04.png) |
+| [📦 C05](C05)     | ✅ Fini  | ![C05](Other/img/C05.png) |
+| [📦 C06](C06)     | ✅ Fini  | ![C06](Other/img/C06.png) |
+| [📦 C07](C07)     | ✅ Fini  | ![C07](Other/img/C07.png) |
+| [📦 C08](C08)     | ✅ Fini  | ![C08](Other/img/C08.png) |
+| [📦 C09](C09)     | ✅ Fini  | ![C09](Other/img/C09.png) |
+| [📦 C10](C10)     | ❌ En pause  | 💤 Flemmardise (Hexdump manquant 😅) |
+| [📦 C11](C11)     | ✅ Fini  | ![C11](Other/img/C11.png) |
+
