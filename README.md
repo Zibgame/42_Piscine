@@ -47,3 +47,10 @@ Un véritable challenge technique, physique et mental pour repousser ses limites
 | [📦 C10](C10)     | ❌ En pause  | 💤 Flemmardise (Hexdump manquant 😅) |
 | [📦 C11](C11)     | ✅ Fini  | ![C11](Other/img/C11.png) |
 
+--
+
+# J’ai réussi, grâce à tout cela, à être admis 🎉
+
+![admis](image_admis.png)
+
+
