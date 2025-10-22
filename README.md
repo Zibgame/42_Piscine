@@ -53,4 +53,10 @@ Un véritable challenge technique, physique et mental pour repousser ses limites
 
 ![admis](Other/img/Resultat.png)
 
+---
 
+### 📊 Nombre de lignes de code
+
+- #### 5484 ligne
+
+---
