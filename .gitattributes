@@ -1,0 +1,16 @@
+# ✅ Compte uniquement les fichiers C
+*.c linguist-detectable=true
+*.h linguist-detectable=true
+
+# 🚫 Ignore tout le reste dans les stats GitHub
+Makefile linguist-detectable=false
+*.mk linguist-detectable=false
+*.md linguist-detectable=false
+*.txt linguist-detectable=false
+*.sh linguist-detectable=false
+*.json linguist-detectable=false
+*.lua linguist-detectable=false
+*.yml linguist-detectable=false
+*.yaml linguist-detectable=false
+*.cfg linguist-detectable=false
+*.conf linguist-detectable=false
